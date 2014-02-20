@@ -7,7 +7,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-  </head
+  </head>
   <body>
     <div class="container"> 
         <div class="home col-md-8 col-xs-9">
@@ -50,7 +50,7 @@
 
           _(focus).each(function(tweet) {
             var $tweet = $('<div></div>');
-            $tweet.text('@' + tweet.user + ': ' + tweet.message);
+            $tweet.text(tweet.created_at.toString() + ': @' + tweet.user + ': ' + tweet.message);
             $tweet.prependTo($tweetpanel);
           });
         }
