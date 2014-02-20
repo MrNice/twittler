@@ -45,9 +45,10 @@ for(var i = 0; i < 10; i++){
   generateRandomTweet();
 }
 
+
 var scheduleNextTweet = function(){
   generateRandomTweet();
-  setTimeout(scheduleNextTweet, Math.random() * 1500);
+  setTimeout(scheduleNextTweet, Math.random() * 4000);
 };
 scheduleNextTweet();
 
